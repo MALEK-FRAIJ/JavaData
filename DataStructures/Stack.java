@@ -122,7 +122,6 @@ public class Stack<T extends Object> {
 
             } catch (Exception e) {
 
-                // TODO: handle exception
                 e.printStackTrace();
             }
         }
