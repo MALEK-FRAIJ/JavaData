@@ -10,8 +10,7 @@ import java.util.Scanner;
  */
 public class Queue<T extends Object> {
     private T[] queue;
-    private int front;
-    private int rear;
+    private int front, rear;
     private int capacity;
 
     /**
@@ -24,8 +23,7 @@ public class Queue<T extends Object> {
     @SuppressWarnings({ "unchecked" })
     public Queue(int capacity) {
         this.capacity = capacity;
-        this.front = -1;
-        this.rear = -1;
+        this.front = this.rear = -1;
         this.queue = (T[]) new Object[capacity];
 
     }
